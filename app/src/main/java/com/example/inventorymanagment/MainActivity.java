@@ -10,12 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView result;
-    EditText firstNumEditText, secondNumEditText;
-
-    float resultNum;
-    int num1, num2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
