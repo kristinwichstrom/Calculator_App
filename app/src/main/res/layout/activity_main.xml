@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7BBFF4"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstNumEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Indtast et tal"
+        android:inputType="number"
+        android:textColor="#FF5722"
+        android:textColorHighlight="#FF5722"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FF5722"
+        android:textCursorDrawable="@android:color/holo_orange_light"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondNumEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Indtast endnu et tal"
+        android:inputType="number"
+        android:textColor="#FF5722"
+        android:textColorHighlight="#FF5722"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FF5722"
+        android:textCursorDrawable="@android:color/holo_orange_dark"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumEditText" />
+
+    <Button
+        android:id="@+id/plussKnapp"
+        android:layout_width="82dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:background="#00BCD4"
+        android:fontFamily="sans-serif-thin"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
+
+    <TextView
+        android:id="@+id/resultTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/days_one"
+        android:text="="
+        android:textColor="#F44336"
+        android:textSize="50px"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dividerKnapp"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="@+id/dividerKnapp"
+        app:layout_constraintTop_toBottomOf="@+id/dividerKnapp"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <Button
+        android:id="@+id/minusKnapp"
+        android:layout_width="86dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="48dp"
+        android:background="#D6D6D6"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/plussKnapp"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
+
+    <Button
+        android:id="@+id/dividerKnapp"
+        android:layout_width="92dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="148dp"
+        android:background="#E6D967"
+        android:text="%"
+        app:layout_constraintEnd_toStartOf="@+id/minusKnapp"
+        app:layout_constraintStart_toEndOf="@+id/plussKnapp"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
